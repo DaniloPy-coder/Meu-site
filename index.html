@@ -22,130 +22,170 @@
 </head>
 
 <body>
-    <header>
+    <div class="particles"></div>
+
+    <nav class="navigation">
+        <ul class="menu">
+            <li>
+                <a href="#inicio" class="menu-link">Início</a>
+            </li>
+            <li>
+                <a href="#sobre" class="menu-link">Sobre</a>
+            </li>
+            <li>
+                <a href="#projetos" class="menu-link">Projetos</a>
+            </li>
+            <li>
+                <a href="#contatos" class="menu-link">Contato</a>
+            </li>
+        </ul>
+    </nav>
+
+    <main id="inicio" class="header">
+        <img src="./img/ft perfil.jpg" class="profile-picture" alt="Foto de perfil">
         <h1>Danilo José</h1>
-        <p>Desenvolvedor Front-End</p>
+        <p class="header-subtitle">Desenvolvedor Front End Júnior</p>
+        <a href="C:\Users\danil\OneDrive\Documents\Curriculos\Curriculo-Dev.pdf" class="btn-download" download>Baixar
+            Currículo</a>
+    </main>
 
-        <nav>
-            <ul>
-                <li><a href="#about">Sobre mim</a></li>
-                <li><a href="#projects">Projetos</a></li>
-
-            </ul>
-        </nav>
-    </header>
-
-    <section id="about">
-        <h1>Sobre Mim</h1>
-        <p>Sou um desenvolvedor front-end apaixonado por criar experiências web envolventes e funcionais. Com um
-            forte domínio de HTML, CSS, JavaScript e ReactJs transformo ideias em interfaces intuitivas e responsivas.
-            Estou
-            sempre em busca de novas tendências e tecnologias para aprimorar minhas habilidades e oferecer soluções
-            criativas.</p>
+    <section id="about" class="about">
+        <h2 class="about-title">Sobre Mim</h2>
+        <div class="about-box">
+            <p class="about-paragraph">Meu nome é Danilo José tenho 18 anos, sou natural de Recife-PE, mas atualmente
+                moro em São José dos
+                Campos-SP. Atualmente sou estudante de análise e desenvolvimento de sistemas.
+                Embora ainda não tenha experiência profissional na área, desenvolvo projetos para adicionar ao meu
+                portfólio, o que me ajuda a compensar essa falta. Com meus conhecimentos e habilidades, estou
+                comprometido em contribuir ao máximo para o crescimento da empresa. Sou uma pessoa proativa, com grande
+                vontade de aprender e aprimorar minhas competências, e gosto de trabalhar em equipe.</p>
+        </div>
     </section>
 
-    <section id="projects">
-        <h1>Meus Projetos</h1>
-        <div class="project-grid">
-            <div class="project-item">
-                <h3>Projeto 1 - Comparador de preços</h3>
-                <a href="https://danilopy-coder.github.io/Comparador-de-pre-os/">
-                    <img src="img/header-ancoragempreço.png" alt="projeto-1" height="250px">
-                    <p>Clique aqui para acessar o projeto</p>
-                </a>
-                <p>O projeto de comparador de preços visa criar uma plataforma online que permita aos usuários comparar
-                    preços de produtos e serviços de diferentes lojas e fornecedores.</p>
-            </div>
+    <section id="projetos" class="about">
+        <h2 class="projects-title">Meus Projetos</h2>
 
-            <div class="project-grid">
-                <div class="project-item">
-                    <h3>Projeto 2 - Previsão do tempo</h3>
-                    <a href="https://lnkd.in/dgXDa7Vg">
-                        <img src="img/Clima.png" alt="projeto-2">
-                        <p>Clique aqui para acessar o projeto</p>
-                    </a>
-                    <p>Essa aplicação de clima é uma ferramenta intuitiva e visualmente atraente, projetada para
-                        fornecer
-                        informações meteorológicas em tempo real e previsões precisas.</p>
+        <a href="https://conversor-moedas-psi.vercel.app/" target="_blank" class="project-link">
+            <div class="projects-box">
+                <div class="projects-card">
+                    <img src="./img/projeto 1.png" alt="Projeto 1" class="projects-image">
+                    <div class="box-text-projects">
+                        <h3 class="info-projects">Conversor de moedas</h3>
+                        <p class="paragraph-projects">Esse código implementa um conversor de moedas usando React, com
+                            algumas
+                            funcionalidades
+                            adicionais,
+                            como troca de temas (modo claro e escuro) e formatação de grandes números. </p>
+                    </div>
+                </div>
+        </a>
+
+        <a href="https://react-clima-dun.vercel.app/" target="_blank" class="project-link">
+            <div class="projects-box">
+
+                <div class="projects-card">
+                    <img src="./img/projeto 2.png" alt="Projeto 1" class="projects-image">
+                    <div class="box-text-projects">
+
+                        <h3 class="info-projects">Previsão do tempo</h3>
+                        <p class="paragraph-projects">O sistema serve para buscar a previsão do tempo por cidade,
+                            exibindo a
+                            temperatura atual, as condições climáticas (ensolarado, nublado, etc.) e a previsão para os
+                            próximos
+                            dias. A interface é responsiva, adaptada tanto para dispositivos móveis quanto para
+                            desktops.
+                        </p>
+                    </div>
                 </div>
             </div>
+        </a>
 
-            <div class="project-grid">
-                <div class="project-item">
-                    <h3>Projeto 3 - Gerador de senhas</h3>
-                    <a href="https://danilopy-coder.github.io/Gerador-de-senhas/">
-                        <img src="img/senha_img.png" alt="projeto-3">
-                        <p>Clique aqui para acessar o projeto</p>
-                    </a>
-                    <p>Projetada para criar senhas aleatórias. A interface é amigável, permitindo que os
-                        usuários personalizem suas senhas de acordo com o comprimento que deseja.</p>
+        <a href="https://big-burger-sigma.vercel.app/" target="_blank" class="project-link">
+
+            <div class="projects-box">
+
+                <div class="projects-card">
+                    <img src="./img/projeto 3.png" alt="Projeto 3" class="projects-image">
+                    <div class="box-text-projects">
+
+                        <h3 class="info-projects">Big Burger</h3>
+                        <p class="paragraph-projects">Desenvolvi o projeto "Big Burger", um site interativo para uma
+                            lanchonete
+                            fictícia, utilizando HTML, CSS e JavaScript.
+                            O objetivo foi criar uma plataforma intuitiva e visualmente atraente para os usuários
+                            escolherem
+                            seus próprios itens e navegarem pelo cardápio de maneira fluida. </p>
+                    </div>
                 </div>
             </div>
+        </a>
 
-            <div class="project-grid">
-                <div class="project-item">
-                    <h3>Projeto 4 - Buscador de receitas</h3>
-                    <a href="https://danilopy-coder.github.io/Buscador-receitas/">
-                        <img src="img/receitas_img.png" alt="projeto-4">
-                        <p>Clique aqui para acessar o projeto</p>
-                    </a>
-                    <p>Essa aplicação ajuda os usuários a buscar receitas de forma simples e prática, utilizando
-                        ingredientes que possuem em casa.</p>
+        <a href="https://buscador-de-cep-swart.vercel.app/" target="_blank" class="project-link">
+            <div class="projects-box">
 
+                <div class="projects-card">
+                    <img src="./img/projeto 4.png" alt="Projeto 4" class="projects-image">
+                    <div class="box-text-projects">
+
+                        <h3 class="info-projects">Buscador de cep</h3>
+                        <p class="paragraph-projects">O buscador de CEP em React é uma aplicação que permite ao usuário
+                            consultar informações de endereço a partir de um CEP inserido. Integrado a uma API como
+                            ViaCEP, o sistema valida a entrada, exibe os dados retornados, como rua, bairro e cidade, ou
+                            apresenta mensagens de erro para CEPs inválidos. </p>
+                    </div>
                 </div>
             </div>
+        </a>
+    </section>
 
-            <div class="project-grid">
-                <div class="project-item">
-                    <h3>Projeto 5 - Conversor de moedas</h3>
-                    <a href="https://danilopy-coder.github.io/Conversor-de-moedas/">
-                        <img src="img/coin.png" alt="projeto-5">
-                        <p>Clique aqui para acessar o projeto</p>
-                    </a>
-                    <p>Este projeto é um conversor de moedas dinâmico desenvolvido com HTML, CSS e JavaScript. Ele
-                        permite que o usuário selecione diferentes pares de moedas e visualize a conversão em tempo real
-                        utilizando uma API de taxas de câmbio atualizadas.</p>
-                </div>
+    <section id="contatos" class="about">
+        <h2 class="contact-title">Entre em Contato</h2>
+        <form class="form-contact" id="formulario" onsubmit="enviarWhats(event)">
+            <div class="group-form">
+                <input placeholder="Nome" class="field-form" id="nome">
             </div>
 
-            <div class="project-grid">
-                <div class="project-item">
-                    <h3>Projeto 6 - Hamburgueria</h3>
-                    <a href="https://big-burger-sigma.vercel.app/">
-                        <img src="./img/logo burguer.jpg" alt="projeto-6">
-                        <p>Clique aqui para acessar o projeto</p>
-                    </a>
-                    <p>O site apresenta seções para diferentes tipos de produtos, como hambúrgueres, porções e bebidas,
-                        com imagens, descrições e botões para adicionar itens ao carrinho de compras. O cabeçalho exibe
-                        o nome e logotipo do restaurante, com uma navegação para facilitar o acesso às seções de
-                        produtos. Um botão de carrinho no topo permite que o cliente veja o número de itens adicionados
-                        e, ao clicar, abre um modal para o usuário revisar os itens, inserir o endereço e telefone, e
-                        finalizar o pedido. </p>
-                </div>
+            <div class="group-form">
+                <textarea id="mensagem" rows="6" class="field-form" placeholder="Digite sua mensagem"></textarea>
             </div>
+
+            <button type="submit" class="btn-form">Enviar WhatsApp</button>
+        </form>
     </section>
 
 </body>
 
 <footer>
-    &copy; Danilo Dev 2024
     <div class="footer-social">
-        <a href="https://www.linkedin.com/in/danilo-dev2006" class="icon-btn">
+        <a href="https://www.linkedin.com/in/danilo-dev2006">
             <i class="bi bi-linkedin"></i>
             <h2>Linkedin</h2>
         </a>
 
-        <a href="https://github.com/DaniloPy-coder" class="icon-btn">
+        <a href="https://github.com/DaniloPy-coder">
             <i class="bi bi-github"></i>
             <h2>GitHub</h2>
         </a>
-
-        <a href="mailto:danilodevsp@gmail.com" class="icon-btn">
-            <i class="bi bi-envelope"></i>
-            <h2>Email</h2>
-        </a>
     </div>
+    &copy; Danilo Dev 2025
+
 </footer>
-<script src="script.js" defer></script>
+
+<script>
+    function enviarWhats(event) {
+        event.preventDefault();
+
+        const nome = document.getElementById('nome').value;
+        const mensagem = document.getElementById('mensagem').value;
+        const telefone = "5512992102803";
+
+        const texto = `Olá! Me chamo ${nome.value}, ${mensagem.value}`;
+        const msgFormatada = encodeURIComponent(texto);
+
+        const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+
+        window.open(url, '_blank');
+    }
+</script>
 
 </html>
