@@ -44,8 +44,8 @@
     <main id="inicio" class="header">
         <img src="./img/ft perfil.jpg" class="profile-picture" alt="Foto de perfil">
         <h1>Danilo José</h1>
-        <p class="header-subtitle">Desenvolvedor Front End Júnior</p>
-        <a href="https://drive.google.com/file/d/1HE9JgwGam5oWUFnA10kRTbq3ZvWqR8ZL/view" class="btn-download" target="_blank" download>Baixar
+        <p class="header-subtitle">Desenvolvedor Front End </p>
+        <a href="C:\Users\danil\OneDrive\Documents\Curriculos\Curriculo-Dev.pdf" class="btn-download" download>Baixar
             Currículo</a>
     </main>
 
@@ -59,6 +59,14 @@
                 portfólio, o que me ajuda a compensar essa falta. Com meus conhecimentos e habilidades, estou
                 comprometido em contribuir ao máximo para o crescimento da empresa. Sou uma pessoa proativa, com grande
                 vontade de aprender e aprimorar minhas competências, e gosto de trabalhar em equipe.</p>
+        </div>
+
+        <div class="skills">
+            <span class="tag-skills">HTML</span>
+            <span class="tag-skills">CSS</span>
+            <span class="tag-skills">JavaScript</span>
+            <span class="tag-skills">React</span>
+            <span class="tag-skills">API</span>
         </div>
     </section>
 
@@ -179,7 +187,7 @@
         const mensagem = document.getElementById('mensagem').value;
         const telefone = "5512992102803";
 
-        const texto = `Olá! Me chamo ${nome.value}, ${mensagem.value}`;
+        const texto = `Olá! Me chamo ${nome}, ${mensagem}`;
         const msgFormatada = encodeURIComponent(texto);
 
         const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
