@@ -1,0 +1,97 @@
+@use "../../styles/tokens/colors" as colors;
+
+@mixin button-size($font-size, $height, $padding-x) {
+  font-size: $font-size;
+  height: $height;
+  padding: 0 $padding-x;
+}
+
+.button {
+  font-family: "Work Sans", sans-serif;
+  font-weight: 500;
+  border: none;
+  border-radius: 8px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s, transform 0.2s;
+  cursor: pointer;
+
+  &:disabled {
+    background-color: colors.getColor("black-100");
+    color: colors.getColor("black-300");
+    cursor: not-allowed;
+    opacity: 0.6;
+  }
+
+  &:hover:not(:disabled) {
+    transform: translateY(-2px);
+  }
+
+  &:active:not(:disabled) {
+    transform: scale(0);
+  }
+
+  // Tamanhos
+
+  &--small {
+    @include button-size(16px, 36px, 16px);
+  }
+  &--medium {
+    @include button-size(18px, 48px, 16px);
+  }
+  &--large {
+    @include button-size(20px, 56px, 24px);
+  }
+
+  // Botao primario (verde)
+  &--primary {
+    background-color: colors.getColor("green-500");
+    color: colors.getColor("white-100");
+
+    &:hover {
+      background-color: colors.getColor("green-700");
+    }
+
+    &:active {
+      background-color: colors.getColor("green-800");
+    }
+  }
+
+  // Botao secundario (borda roxa)
+
+  &--secondary {
+    background-color: transparent;
+    color: colors.getColor("secondary-500");
+    border: 2px solid colors.getColor("secondary-500");
+
+    &:hover {
+      background-color: colors.getColor("secondary-500");
+      color: colors.getColor("white-100");
+    }
+
+    &:active {
+      background-color: colors.getColor("secondary-600");
+    }
+  }
+
+  .icon-left,
+  .icon-right {
+    display: inline-flex;
+    align-items: center;
+  }
+
+  .icon-left {
+    margin-right: 8px;
+  }
+  .icon-right {
+    margin-left: 8px;
+  }
+
+  &.hide-left .icon-left {
+    display: none;
+  }
+  &.hide-right .icon-right {
+    display: none;
+  }
+}

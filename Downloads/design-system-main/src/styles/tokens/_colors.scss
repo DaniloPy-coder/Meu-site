@@ -1,0 +1,58 @@
+@use "sass:map";
+
+$colors: (
+  // Cores primárias
+  "green-900": #084d51,
+  "green-800": #0b656a,
+  "green-700": #43c6cd,
+  "green-500": #14b8c0,
+  "green-400": #43c6cd,
+  "green-300": #62cfd5,
+  "green-200": #93dee2,
+  "green-100": #b6e9eb,
+  "green-50": #e8f8f9,
+
+  // Cores secundárias
+  "secondary-900": #2d006b,
+  "secondary-800": #3b008c,
+  "secondary-700": #4d00b5,
+  "secondary-600": #6200e8,
+  "secondary-500": #6c00ff,
+  "secondary-400": #8933ff,
+  "secondary-300": #9d54ff,
+  "secondary-200": #bb8aff,
+  "secondary-100": #d1b0ff,
+  "secondary-50": #f0e6ff,
+
+  // Black
+  "black-900": #050505,
+  "black-800": #070707,
+  "black-700": #090909,
+  "black-600": #0b0b0b,
+  "black-500": #0c0c0c,
+  "black-400": #3d3d3d,
+  "black-300": #5c5c5c,
+  "black-200": #8f8f8f,
+  "black-100": #b4b4b4,
+  "black-50": #e7e7e7,
+
+  // White
+  "white-500": #f1f1f1,
+  "white-400": #f4f4f4,
+  "white-300": #f6f6f6,
+  "white-200": #f9f9f9,
+  "white-100": #fbfbfb,
+
+  // Cor vermelha(erro)
+  "red-500": #df3f3f,
+
+  // Cor amarela(atenção)
+  "yellow-500": #d8d032,
+
+  // Cor verde(sucesso)
+  "green-500": #35d529
+);
+
+@function getColor($key) {
+  @return map.get($colors, $key);
+}

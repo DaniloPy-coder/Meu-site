@@ -1,0 +1,25 @@
+// Base unit
+$spacing-unit: 8px !default;
+
+// Escala de espaçamentos
+$spacing-xs: $spacing-unit * 1; // 8px
+$spacing-sm: $spacing-unit * 2; // 16px
+$spacing-md: $spacing-unit * 3; // 24px
+$spacing-lg: $spacing-unit * 4; // 32px
+$spacing-xl: $spacing-unit * 5; // 40px
+$spacing-xxl: $spacing-unit * 6; // 48px
+
+// Configurações da Grid
+$mobile-columns: 4;
+$mobile-margin: $spacing-sm; // 16px
+$mobile-gutter: $spacing-sm; // 16px
+
+$desktop-columns: 12;
+$desktop-margin: 130px;
+$desktop-gutter: 20px;
+$desktop-container-width: 800px;
+
+// Home - Desktop
+$home-columns: 12;
+$home-margin: 80px;
+$home-gutter: 32px;
