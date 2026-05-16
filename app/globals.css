@@ -1,0 +1,33 @@
+@import "tailwindcss";
+
+:root {
+  --background: #050505;
+  --foreground: #ededed;
+  
+  --color-primary: #7c3aed;   
+  --color-secondary: #4f46e5; 
+  --color-dark: #0a0a0a;
+  --color-darker: #050505;
+  --color-ofcourse: #a1a1aa;
+}
+
+@theme inline {
+  --color-primary: var(--color-primary);
+  --color-secondary: var(--color-secondary);
+  --color-dark: var(--color-dark);
+  --color-darker: var(--color-darker);
+  --color-ofcourse: var(--color-ofcourse);
+
+  @keyframes flutter {
+    0%, 100% { transform: translateY(0); }
+    50% { transform: translateY(-20px); }
+  }
+  --animate-flutter: flutter 5s ease-in-out infinite;
+}
+
+body {
+  background-color: var(--color-darker);
+  color: var(--foreground);
+  font-family: Arial, Helvetica, sans-serif;
+  min-height: 100vh;
+}
