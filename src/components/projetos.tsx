@@ -7,42 +7,49 @@ const Projetos = () => {
       descricao:
         "Esse código implementa um conversor de moedas usando React, com troca de temas (modo claro e escuro) e formatação de grandes números.",
       imagem: "/projeto 1.png",
-      link: "https://conversor-moedas-psi.vercel.app/",
+      link: "https://conversor-moedas-psi.vercel.app",
     },
     {
       titulo: "Previsão do tempo",
       descricao:
         "Sistema para buscar a previsão do tempo por cidade, exibindo a temperatura atual e condições climáticas. Interface totalmente responsiva.",
       imagem: "/projeto 2.png",
-      link: "https://react-clima-dun.vercel.app/",
+      link: "https://react-clima-dun.vercel.app",
     },
     {
       titulo: "Big Burger",
       descricao:
         "Site interativo para uma lanchonete fictícia utilizando HTML, CSS e JavaScript. Foco em experiência do usuário e navegação fluida.",
       imagem: "/projeto 3.png",
-      link: "https://big-burger-sigma.vercel.app/",
+      link: "https://big-burger-sigma.vercel.app",
     },
     {
       titulo: "Buscador de cep",
       descricao:
         "Aplicação React que consome a API ViaCEP para validar e retornar endereços completos a partir do CEP inserido pelo usuário.",
       imagem: "/projeto 4.png",
-      link: "https://buscador-de-cep-swart.vercel.app/",
+      link: "https://buscador-de-cep-swart.vercel.app",
     },
     {
       titulo: "Sistema de Pizzaria",
       descricao:
         "Primeira etapa de um sistema completo com foco em pedidos online, gestão de produtos e fluxo de pedidos em tempo real.",
       imagem: "/projeto 5.png",
-      link: "https://pizzaria-front-end-kappa.vercel.app/",
+      link: "https://pizzaria-front-end-kappa.vercel.app",
     },
     {
       titulo: "CarRental",
       descricao:
         "CarRental é uma plataforma moderna de aluguel de carros desenvolvida para facilitar a busca e visualização de veículos de forma rápida e intuitiva. O projeto possui design responsivo, integração com APIs e foco em experiência do usuário utilizando tecnologias modernas de desenvolvimento web.",
       imagem: "/projeto 6.png",
-      link: "https://car-rental-one-navy.vercel.app/",
+      link: "https://car-rental-one-navy.vercel.app",
+    },
+    {
+      titulo: "Devbnb",
+      descricao:
+        "Aplicação Full Stack inspirada no Airbnb, desenvolvida para conectar desenvolvedores e compartilhar ambientes e informações do universo tech. O projeto utiliza React.js no front-end, Node.js no back-end, PostgreSQL (Neon) com Prisma ORM para gerenciamento de dados e Cloudinary para armazenamento de imagens. Focado em performance, escalabilidade e experiência do usuário, conta com interface responsiva, integração via APIs REST e arquitetura moderna para aplicações web.",
+      imagem: "/projeto 7.png",
+      link: "https://devbnb-front.vercel.app",
     },
   ];
 
